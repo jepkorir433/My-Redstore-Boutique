@@ -1,0 +1,369 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: black; /* boutique background */
+  color:blue;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  padding-top: 60px; /* space so nav doesn't cover content */
+
+    }
+	
+	 nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      z-index: 1000;
+      padding: 10px 0;
+    }
+    nav ul {
+	  display: flex;
+      justify-content: space-around;
+	  list-style: none;
+	  margin: 0;
+	  padding: 0;
+
+    }
+	
+	  nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 20px;
+    }
+	
+	 
+	
+    nav ul li a:hover {
+       background: #444;
+       border-radius: 5px;     here is the part of css 
+  
+      
+    }
+	
+
+    h1 {
+      color: #2e86c1;
+      margin-top: 40px;
+    }
+	
+	
+	
+      img {
+      border-radius: 8px;
+    }
+     
+
+
+    contact-container {
+	  text-align:center;
+	  margin-top:20px;
+	  
+	}  
+	  
+	  
+
+     ul {
+      list-style: disc;
+      list-style-position: inside;
+      margin: 20px auto;
+      padding: 0;
+      font-size: 18px;
+    }
+
+    table {
+      margin: 20px auto;
+      border-collapse: collapse;
+      width: 80%;
+      max-width: 600px;
+      background-color: #1c1c1c;
+    }
+
+       th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+    }
+
+    th {
+      background-color: #2e86c1;
+      color: white;
+    
+	 }
+
+    .product-description {
+      margin: 30px auto;
+      max-width: 700px;
+      padding: 0 20px;
+    }
+
+    .product-images {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+      margin-bottom: 50px;
+    }
+
+    .product-images img {
+      width: 200px;
+      height: auto;
+    }
+	
+	.video#bg-video {
+      position: fixed;
+	 top: 0;
+	 left: 0;
+     min-width: 100%;
+     min-height: 100%;
+     width: auto;
+	 height: auto;
+     z-index: -1;
+     object-fit: cover;
+
+    } 
+
+    .Mediumscreen-video {
+      width: 40%;
+      max-width: 350px;
+      height: auto;
+     flex-wrap: wrap;
+     margin: 20px auto;
+     border-radius: 9px;
+     border: 2px solid #555;
+
+    }
+
+
+    .content {
+
+  position: relative;
+
+  z-index: 1;
+
+  color: white;
+
+  text-align: center;
+
+  padding-top: 40vh;
+
+  font-size: 2rem;
+
+  
+
+    }
+
+
+
+.container {
+
+    max-width: 700px;
+
+    margin: 30px auto;
+
+    padding: 0 15px;
+
+
+
+}
+
+    .blog-post {
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.blog-post h1 {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+  color: #f0f0f0; 
+}
+
+	
+	
+
+    .nav-arrows {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.nav-arrows button {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 25px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background 0.3s;
+  
+  
+}
+
+
+     .nav-arrows button:hover {
+  background: rgba(0,0,0,0.8);
+  
+}
+
+.dots {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dots span {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+
+.dots span.active {
+  background-color: #333;
+}
+
+    .contact-section {
+        text-align: center;
+        padding: 30px;
+        color: #f0f0f0;
+    }
+
+    .contact-form {
+        max-width: 500px;
+        margin: auto;
+		
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 12px;
+        background: transparent;
+        border: 1px solid #888;
+        border-radius: 5px;
+        color: #fff;
+    
+	}
+
+    .contact-form button {
+       padding: 10px;
+       border: none;
+       background: #ff4081;
+       color: white;
+       border-radius: 5px;
+       cursor: pointer;
+    
+	}
+	
+	/* ====== VIDEO SECTION ====== */
+.video-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.video-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* Grid layout for videos */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 per row */
+  gap: 25px; /* space between */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.video-item {
+  text-align: center;
+}
+
+.video-item video {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  object-fit: cover;
+}
+
+.video-item p {
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+     /* ===== Image Gallery Container ===== */
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* keep original card size */
+  gap: 20px;
+  justify-items: center;
+  padding: 20px;
+}
+
+/* ===== Heading ===== */
+.image-gallery h2 {
+  grid-column: 1 / -1;  /* span all columns */
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #007bff;        /* blue heading */
+}
+
+/* ===== Individual Image Cards ===== */
+.image-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 250px;        /* restore original card width */
+  background:black;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+/* Optional: hover effect */
+.image-text-container:hover {
+  transform: translateY(-5px);
+}
+
+/* ===== Image Styling ===== */
+.image-text-container img {
+  width: 100%;
+  max-height: 180px;       /* set medium image height */
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* ===== Text Content ===== */
+.text-content {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.text-content p {
+  margin: 5px 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.text-content .price {
+  font-weight: bold;
+  color: #ffcc00;
+  font-size: 1rem;
+}
