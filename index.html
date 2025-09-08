@@ -25,6 +25,64 @@
   <h2>Welcome to Redstore Boutique</h2>
   <p>Discover the beauty of style and elegance at our boutique.</p>
 
+	
+	 
+	 
+	  <div class="slider">
+    <div class="slides" id="slides">
+      <img src="images/slide4.jpg" alt="slide 4">
+      <img src="images/slide5.jpg" alt="slide 5">
+    </div>
+   
+    <div class="nav-arrows">
+      <button onclick="prevSlide()">❮</button>
+      <button onclick="nextSlide()">❯</button>
+    </div>
+  </div>
+
+  <div class="dots" id="dots">
+    <span onclick="showSlide(0)" class="active"></span>
+    <span onclick="showSlide(1)"></span>
+    <span onclick="showSlide(2)"></span>
+    <span onclick="showSlide(3)"></span>
+  </div>
+
+
+
+	 
+	 
+	<script>
+    const slides = document.getElementById("slides");
+    const totalSlides = slides.children.length;
+    let index = 0;
+
+    function showSlide(i) {
+      index = (i + totalSlides) % totalSlides;
+      slides.style.transform = translateX(-${index * slides.clientWidth}px);
+
+      // Update dots
+      const dots = document.getElementById("dots").children;
+      for (let j = 0; j < dots.length; j++) {
+        dots[j].classList.remove("active");
+      }
+      if(dots[index]) dots[index].classList.add("active");
+    }
+
+    function nextSlide() {
+      showSlide(index + 1);
+    }
+
+    function prevSlide() {
+      showSlide(index - 1);
+    }
+
+    setInterval(nextSlide, 5000);
+
+    window.addEventListener('resize', () => {
+      showSlide(index);
+    });
+  </script>
+  
 	 
 	<section class="video-gallery">
   <h2>Our Fashion Videos</h2>
@@ -199,5 +257,6 @@
   </body>
 
   </html>   
+
 
 
